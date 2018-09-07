@@ -1,4 +1,5 @@
 import DataBus from './databus'
+import Player from './player/index'
 
 let ctx = canvas.getContext('2d')
 let databus = new DataBus()
@@ -6,6 +7,8 @@ let databus = new DataBus()
 export default class Main {
   constructor() {
     this.restart()
+
+    this.player = new Player(ctx)
 
     this.aniId = window.requestAnimationFrame(
       this.bindLoop,
@@ -49,6 +52,8 @@ export default class Main {
       50,
       50
     )
+
+    this.player.drawToCanvas(ctx)
   }
 
   // 游戏逻辑更新主函数
