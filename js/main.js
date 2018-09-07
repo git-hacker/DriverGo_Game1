@@ -1,13 +1,15 @@
 import DataBus from './databus'
 import Player from './player/index'
+import BackGround from './background/index'
 
 let ctx = canvas.getContext('2d')
 let databus = new DataBus()
 
 export default class Main {
   constructor() {
-    this.restart()
+    this.restart();
 
+    this.bg = new BackGround(ctx)
     this.player = new Player(ctx)
 
     this.aniId = window.requestAnimationFrame(
@@ -44,6 +46,7 @@ export default class Main {
   render() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 
+    this.bg.render(ctx)
     ctx.fillStyle = "#ffffff"
     ctx.font = "20px Arial"
 
@@ -59,6 +62,7 @@ export default class Main {
   // 游戏逻辑更新主函数
   update() {
     this.collisionDetection()
+    this.bg.update()
   }
 
   // 实现游戏帧循环

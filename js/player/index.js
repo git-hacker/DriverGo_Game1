@@ -5,9 +5,9 @@ const screenWidth = window.innerWidth
 const screenHeight = window.innerHeight
 
 // 玩家相关常量设置
-const PLAYER_IMG_SRC = 'images/car.png'
-const PLAYER_WIDTH = 80
-const PLAYER_HEIGHT = 80
+const PLAYER_IMG_SRC = 'images/truck.jpeg'
+const PLAYER_WIDTH = 32
+const PLAYER_HEIGHT = 109
 
 let databus = new DataBus()
 
