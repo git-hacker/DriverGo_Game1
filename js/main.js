@@ -1,6 +1,7 @@
 import DataBus from './databus'
 import Player from './player/index'
 import BackGround from './background/index'
+import Road from './road/index'
 
 let ctx = canvas.getContext('2d')
 let databus = new DataBus()
@@ -11,6 +12,9 @@ export default class Main {
 
     this.bg = new BackGround(ctx)
     this.player = new Player(ctx)
+    this.road1 = new Road(ctx, 30);
+    this.road2 = new Road(ctx, 130);
+    this.road3 = new Road(ctx, 230);
 
     this.aniId = window.requestAnimationFrame(
       this.bindLoop,
@@ -25,7 +29,6 @@ export default class Main {
   }
 
   collisionDetection() {
-    console.log("Col det");
   }
 
   touchEventHandler(e) {
@@ -47,6 +50,11 @@ export default class Main {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 
     this.bg.render(ctx)
+
+    this.road1.render(ctx);
+    this.road2.render(ctx);
+    this.road3.render(ctx);
+
     ctx.fillStyle = "#ffffff"
     ctx.font = "20px Arial"
 
@@ -63,6 +71,9 @@ export default class Main {
   update() {
     this.collisionDetection()
     this.bg.update()
+    this.road1.update()
+    this.road2.update()
+    this.road3.update()
   }
 
   // 实现游戏帧循环
