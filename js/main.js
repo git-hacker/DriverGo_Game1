@@ -75,11 +75,7 @@ export default class Main {
     ctx.fillStyle = "#ffffff"
     ctx.font = "20px Arial"
 
-    ctx.fillText(
-      `Current Score: ${2 + 2}`,
-      50,
-      50
-    );
+    ctx.fillText(`Current Score: ${databus.score}`, 50, 50);
 
     this.player.drawToCanvas(ctx)
 
@@ -88,7 +84,6 @@ export default class Main {
     }
   }
 
-  // 游戏逻辑更新主函数
   update() {
     this.collisionDetection();
     this.bg.update();
@@ -103,6 +98,18 @@ export default class Main {
       .forEach((item) => {
         item.update();
       });
+
+    this.updateScore();
+  }
+
+  updateScore() {
+    if(databus.gameOver) {
+      return;
+    }
+
+    if(databus.frame % 15 === 0) {
+      databus.score += 1;
+    }
   }
 
   loop() {
