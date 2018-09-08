@@ -5,10 +5,10 @@ const screenWidth = window.innerWidth
 const screenHeight = window.innerHeight
 
 const ROAD_IMAGE_SRC = 'images/road.png'
-const ROAD_WIDTH = 150   
-const ROAD_HEIGHT = 633
+const ROAD_WIDTH = 204
+const ROAD_HEIGHT = 622
 const ROAD_DISPLAY_WIDTH = 100
-const ROAD_DISPLAY_HEIGHT = ROAD_HEIGHT * 3
+const ROAD_DISPLAY_HEIGHT = ROAD_HEIGHT * 2.5
 let databus = new DataBus()
 
 export default class Road extends Sprite {
