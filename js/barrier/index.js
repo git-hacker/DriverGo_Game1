@@ -1,9 +1,9 @@
 import DataBus from '../databus'
 import Sprite from '../base/sprite'
 
-const ENEMY_IMG_SRC = 'images/barrier.png';
-const ENEMY_WIDTH   = 60;
-const ENEMY_HEIGHT  = 60;
+const BARRIER_IMG_SRC = 'images/barrier.png';
+const BARRIER_WIDTH   = 60;
+const BARRIER_HEIGHT  = 60;
 
 const __ = {
   speed: Symbol('speed')
@@ -15,9 +15,9 @@ function rnd(start, end){
   return Math.floor(Math.random() * (end - start) + start)
 }
 
-export default class Enemy extends Sprite {
+export default class Barrier extends Sprite {
   constructor() {
-    super(ENEMY_IMG_SRC, ENEMY_WIDTH, ENEMY_HEIGHT)
+    super(BARRIER_IMG_SRC, BARRIER_WIDTH, BARRIER_HEIGHT)
   }
 
   init(roadId) {
