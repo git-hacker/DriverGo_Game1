@@ -16,14 +16,6 @@ export default class Main {
   constructor() {
     this.restart();
 
-    this.bg = new BackGround(ctx);
-    this.player = new Player(ctx, databus.currentPlayerRoad);
-    this.road1 = new Road(ctx, 50, 1);
-    this.road2 = new Road(ctx, 150, 2);
-    this.road3 = new Road(ctx, 250, 3);
-
-    this.gameOverScreen = new GameOver();
-
     this.aniId = window.requestAnimationFrame(
       this.bindLoop,
       canvas
@@ -33,7 +25,21 @@ export default class Main {
   restart() {
     databus.reset();
 
-    this.bindLoop = this.loop.bind(this)
+    canvas.removeEventListener(
+      'touchstart',
+      this.touchHandler
+    );
+
+    this.bg = new BackGround(ctx);
+    this.player = new Player(ctx, databus.currentPlayerRoad);
+    this.road1 = new Road(ctx, 50, 1);
+    this.road2 = new Road(ctx, 150, 2);
+    this.road3 = new Road(ctx, 250, 3);
+
+    this.gameOverScreen = new GameOver();
+
+    this.bindLoop     = this.loop.bind(this)
+    this.hasEventBind = false
   }
 
   touchEventHandler(e) {
