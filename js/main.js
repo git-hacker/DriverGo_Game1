@@ -62,7 +62,6 @@ export default class Main {
         break;
     }
 
-
     this.road1.render(ctx);
     this.road2.render(ctx);
     this.road3.render(ctx);

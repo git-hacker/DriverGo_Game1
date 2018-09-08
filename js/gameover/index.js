@@ -1,6 +1,12 @@
 const screenWidth  = window.innerWidth
 const screenHeight = window.innerHeight
 
+let gameoverBackground = new Image()
+gameoverBackground.src = 'images/modal_bg.png'
+
+const GAMEOVER_BG_WIDTH =  350;
+const GAMEOVER_BG_HEIGHT = 271;
+
 export default class GameOver {
   renderGameScore(ctx, score) {
     ctx.fillStyle = "#ffffff"
@@ -14,6 +20,14 @@ export default class GameOver {
   }
 
   renderGameOver(ctx, score) {
+    ctx.drawImage(
+      gameoverBackground,
+      (screenWidth / 2) - (GAMEOVER_BG_WIDTH / 2),
+      (screenHeight / 2) - (GAMEOVER_BG_HEIGHT / 2),
+      GAMEOVER_BG_WIDTH,
+      GAMEOVER_BG_HEIGHT
+    );
+
     ctx.fillStyle = "#ffffff"
     ctx.font      = "20px Arial"
 
