@@ -7,17 +7,11 @@ let instance
  */
 export default class DataBus {
   constructor() {
-    if (instance)
-      return instance
+    if (instance) {
+      return instance;
+    }
 
-    instance = this
-
-    this.pool = new Pool();
-    this.currentPlayerRoad = 2;
-    this.barriers = [];
-    this.gameOver = false;
-
-    this.reset()
+    instance = this;
   }
 
   reset() {
@@ -27,6 +21,23 @@ export default class DataBus {
     this.gameOver = false;
     this.barriers = [];
     this.pool = new Pool();
+
+    this.gameplayPaused = true;
+
+    this.countdownToStart = 3000;
+    this.updateCountdownTimer(3000);
+  }
+
+  updateCountdownTimer(newTimeRemaining) {
+    console.log(newTimeRemaining);
+    this.countdownToStart = newTimeRemaining;
+
+    if(newTimeRemaining <= 0) {
+      this.gameplayPaused = false;
+    }
+    else {
+      setTimeout(() => { this.updateCountdownTimer(newTimeRemaining - 1000) }, 1000);
+    }
   }
 
   removeBarrier(barrier) {

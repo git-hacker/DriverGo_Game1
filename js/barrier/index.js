@@ -41,6 +41,10 @@ export default class Barrier extends Sprite {
   }
 
   update() {
+    if(databus.gameplayPaused) {
+      return;
+    }
+
     this.y += this[__.speed];
 
     if(this.y > window.innerHeight + this.height)

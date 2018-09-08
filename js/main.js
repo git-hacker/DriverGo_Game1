@@ -4,6 +4,7 @@ import BackGround from './background/index'
 import Road from './road/index'
 import Barrier from './barrier/index'
 import GameOver from './gameover/index'
+import Countdown from './countdown/index'
 
 let ctx = canvas.getContext('2d');
 let databus = new DataBus();
@@ -37,6 +38,7 @@ export default class Main {
     this.road3 = new Road(ctx, 250, 3);
 
     this.gameOverScreen = new GameOver();
+    this.countdownScreen = new Countdown();
 
     this.bindLoop     = this.loop.bind(this)
     this.hasEventBind = false
@@ -74,13 +76,8 @@ export default class Main {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     this.bg.render(ctx);
 
-    switch(this.state) {
-      case "countdown":
-        break;
-      case "gameplay":
-        break;
-      case "gameover":
-        break;
+    if(databus.countdownToStart > 0) {
+      this.countdownScreen.renderCountdown(ctx);
     }
 
     this.road1.render(ctx);
@@ -110,21 +107,24 @@ export default class Main {
   }
 
   update() {
-    this.collisionDetection();
-    this.bg.update();
-    this.road1.update();
-    this.road2.update();
-    this.road3.update();
     this.player.setCurrentRoad(databus.currentPlayerRoad);
 
-    this.barrierGenerate();
+    if(!databus.gameplayPaused) {
+      this.collisionDetection();
+      this.bg.update();
+      this.road1.update();
+      this.road2.update();
+      this.road3.update();
+      this.barrierGenerate();
 
-    databus.barriers
-      .forEach((item) => {
-        item.update();
-      });
+      databus.barriers
+        .forEach((item) => {
+          item.update();
+        });
 
-    this.updateScore();
+
+      this.updateScore();
+    }
   }
 
   updateScore() {

@@ -9,8 +9,8 @@ const GAMEOVER_BG_HEIGHT = 271;
 
 export default class GameOver {
   renderGameScore(ctx, score) {
-    ctx.fillStyle = "#ffffff"
-    ctx.font      = "20px Arial"
+    ctx.fillStyle = "#ffffff";
+    ctx.font      = "20px Arial";
 
     ctx.fillText(
       score,
@@ -32,7 +32,7 @@ export default class GameOver {
     ctx.font      = "20px Arial"
 
     ctx.fillText(
-      'Game Over',
+      'Game Over!',
       screenWidth / 2 - 40,
       screenHeight / 2 - 100 + 50
     )

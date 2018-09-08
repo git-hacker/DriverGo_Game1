@@ -49,6 +49,10 @@ export default class Road extends Sprite {
   }
 
   update(ctx) {
+    if(databus.gameplayPaused) {
+      return;
+    }
+
     this.top += 4;
 
     if (this.top >= screenHeight)

@@ -1,4 +1,5 @@
 import Sprite from '../base/sprite'
+import DataBus from '../databus'
 
 const screenWidth = window.innerWidth
 const screenHeight = window.innerHeight
@@ -6,6 +7,8 @@ const screenHeight = window.innerHeight
 const BG_IMG_SRC = 'images/bg.png'
 const BG_WIDTH = 114
 const BG_HEIGHT = 122
+
+const databus = new DataBus();
 
 export default class BackGround extends Sprite {
   constructor(ctx) {
@@ -17,6 +20,10 @@ export default class BackGround extends Sprite {
   }
 
   update() {
+    if(databus.gameplayPaused) {
+      return;
+    }
+
     this.top += 2;
 
     if (this.top >= screenHeight)
