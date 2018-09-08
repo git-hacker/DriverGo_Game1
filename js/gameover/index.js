@@ -28,7 +28,7 @@ export default class GameOver {
       GAMEOVER_BG_HEIGHT
     );
 
-    ctx.fillStyle = "#ffffff"
+    ctx.fillStyle = "#000000"
     ctx.font      = "20px Arial"
 
     ctx.fillText(
@@ -42,6 +42,20 @@ export default class GameOver {
       screenWidth / 2 - 40,
       screenHeight / 2 - 100 + 130
     )
+
+
+    ctx.fillText(
+      'Try Again',
+      screenWidth / 2 - 40,
+      screenHeight / 2 - 100 + 205
+    )
+
+    this.tryAgainButtonArea = {
+      startX: screenWidth / 2 - 40,
+      startY: screenHeight / 2 - 100 + 180,
+      endX  : screenWidth / 2  + 50,
+      endY  : screenHeight / 2 - 100 + 255
+    }
   }
 }
 

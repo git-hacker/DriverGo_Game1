@@ -31,9 +31,25 @@ export default class Main {
   }
 
   restart() {
-    databus.reset()
+    databus.reset();
 
     this.bindLoop = this.loop.bind(this)
+  }
+
+  touchEventHandler(e) {
+    e.preventDefault();
+
+    const x = e.touches[0].clientX;
+    const y = e.touches[0].clientY;
+
+    const area = this.gameOverScreen.tryAgainButtonArea;
+
+    if(  x >= area.startX
+      && x <= area.endX
+      && y >= area.startY
+      && y <= area.endY) {
+      this.restart();
+    }
   }
 
   collisionDetection() {
@@ -42,7 +58,6 @@ export default class Main {
 
       if(this.player.isCollideWith(barrier)) {
         databus.gameOver = true;
-        console.log("OHSHIT")
 
         break;
       }
@@ -80,6 +95,11 @@ export default class Main {
 
     if(databus.gameOver) {
       this.gameOverScreen.renderGameOver(ctx, databus.score);
+      if (!this.hasEventBind) {
+        this.hasEventBind = true;
+        this.touchHandler = this.touchEventHandler.bind(this);
+        canvas.addEventListener('touchstart', this.touchHandler);
+      }
     }
   }
 
