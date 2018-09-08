@@ -4,7 +4,6 @@
     <list default="true" id="cc721ba9-89fe-4ac3-889d-59a64b47aca4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/js/countdown/index.js" afterPath="$PROJECT_DIR$/js/countdown/index.js" />
-      <change beforePath="$PROJECT_DIR$/js/databus.js" afterPath="$PROJECT_DIR$/js/databus.js" />
       <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="83" column="24" lean-forward="true" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+            <state relative-caret-position="504">
+              <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -62,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/countdown/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -98,9 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>collisionDe</find>
-      <find>il</find>
-      <find>Ga</find>
       <find>gameover</find>
       <find>isCollide</find>
       <find>.log</find>
@@ -128,6 +124,9 @@
       <find>Math.</find>
       <find>gameOver</find>
       <find>gameOver = true</find>
+      <find>Current Score</find>
+      <find>cx</find>
+      <find>countdown</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,9 +141,9 @@
         <option value="$PROJECT_DIR$/js/background/index.js" />
         <option value="$PROJECT_DIR$/js/barrier/index.js" />
         <option value="$PROJECT_DIR$/js/road/index.js" />
-        <option value="$PROJECT_DIR$/js/countdown/index.js" />
         <option value="$PROJECT_DIR$/js/databus.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/countdown/index.js" />
       </list>
     </option>
   </component>
@@ -242,7 +241,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536393865073</updated>
       <workItem from="1536393866447" duration="6737000" />
-      <workItem from="1536409081999" duration="10280000" />
+      <workItem from="1536409081999" duration="10449000" />
     </task>
     <task id="LOCAL-00001" summary="Update developer app id">
       <created>1536417632192</created>
@@ -258,11 +257,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536426803958</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Pause gameplay on death">
+      <created>1536426842948</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1536426842948</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17017000" />
+    <option name="totallyTimeSpent" value="17186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -298,7 +304,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update developer app id" />
     <MESSAGE value="Implement a rudimentary countdown timer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement a rudimentary countdown timer" />
+    <MESSAGE value="Pause gameplay on death" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pause gameplay on death" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -438,10 +445,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/countdown/index.js">
+    <entry file="file://$PROJECT_DIR$/js/databus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="290">
+          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -456,21 +463,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/databus.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="83" column="24" lean-forward="true" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+        <state relative-caret-position="504">
+          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/countdown/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -77,10 +77,6 @@ export default class Main {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     this.bg.render(ctx);
 
-    if(databus.countdownToStart > 0) {
-      this.countdownScreen.renderCountdown(ctx);
-    }
-
     this.road1.render(ctx);
     this.road2.render(ctx);
     this.road3.render(ctx);
@@ -104,6 +100,10 @@ export default class Main {
         this.touchHandler = this.touchEventHandler.bind(this);
         canvas.addEventListener('touchstart', this.touchHandler);
       }
+    }
+
+    if(databus.countdownToStart > 0) {
+      this.countdownScreen.renderCountdown(ctx);
     }
   }
 

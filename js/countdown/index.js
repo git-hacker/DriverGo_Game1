@@ -10,11 +10,11 @@ export default class Countdown {
     let countdownInSeconds = Math.ceil(databus.countdownToStart / 1000.0);
 
     ctx.fillStyle = "#ffffff";
-    ctx.font      = "20px Arial";
+    ctx.font      = "72px Arial";
     ctx.fillText(
-      countdownInSeconds,
-      10,
-      30
+      `${countdownInSeconds}`,
+      screenWidth / 2 - 10,
+      screenHeight / 2
     );
   }
 }
