@@ -87,6 +87,8 @@ export default class Main {
         databus.score += 25;
 
         databus.removeCoin(coin);
+
+        this.music.playCoin();
       }
     }
   }

@@ -15,7 +15,10 @@ export default class Music {
     this.bgmAudio.src  = 'audio/background_music.mp3'
 
     this.countdownAudio      = new Audio()
-    this.countdownAudio.src  = 'audio/countdown.wav'
+    this.countdownAudio.src  = 'audio/countdown.mp3'
+
+    this.coinAudio = new Audio();
+    this.coinAudio.src = 'audio/coin.wav';
 
     this.playBgm();
   }
@@ -25,7 +28,12 @@ export default class Music {
   }
 
   playCountdown() {
-    this.countdownAudio.currentTime = 0
+    this.countdownAudio.currentTime = 0;
     this.countdownAudio.play()
+  }
+
+  playCoin() {
+    this.coinAudio.currentTime = 0;
+    this.coinAudio.play();
   }
 }
