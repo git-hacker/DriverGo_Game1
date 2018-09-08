@@ -8,7 +8,6 @@ const databus = new DataBus();
 export default class Countdown {
   renderCountdown(ctx) {
     let countdownInSeconds = Math.ceil(databus.countdownToStart / 1000.0);
-    console.log(countdownInSeconds);
 
     ctx.fillStyle = "#ffffff";
     ctx.font      = "20px Arial";

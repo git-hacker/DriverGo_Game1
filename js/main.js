@@ -66,6 +66,7 @@ export default class Main {
 
       if(this.player.isCollideWith(barrier)) {
         databus.gameOver = true;
+        databus.gameplayPaused = true;
 
         break;
       }

@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc721ba9-89fe-4ac3-889d-59a64b47aca4" name="Default" comment="Update developer app id">
-      <change beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/countdown/index.js" />
+    <list default="true" id="cc721ba9-89fe-4ac3-889d-59a64b47aca4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/js/background/index.js" afterPath="$PROJECT_DIR$/js/background/index.js" />
-      <change beforePath="$PROJECT_DIR$/js/barrier/index.js" afterPath="$PROJECT_DIR$/js/barrier/index.js" />
+      <change beforePath="$PROJECT_DIR$/js/countdown/index.js" afterPath="$PROJECT_DIR$/js/countdown/index.js" />
       <change beforePath="$PROJECT_DIR$/js/databus.js" afterPath="$PROJECT_DIR$/js/databus.js" />
-      <change beforePath="$PROJECT_DIR$/js/gameover/index.js" afterPath="$PROJECT_DIR$/js/gameover/index.js" />
       <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/js/road/index.js" afterPath="$PROJECT_DIR$/js/road/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="79" column="10" lean-forward="false" selection-start-line="79" selection-start-column="10" selection-end-line="79" selection-end-column="10" />
+            <state relative-caret-position="320">
+              <caret line="83" column="24" lean-forward="true" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -67,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/countdown/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="180">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,8 +75,8 @@
       <file leaf-file-name="databus.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/databus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="290">
+              <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -103,7 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Cool b</find>
       <find>collisionDe</find>
       <find>il</find>
       <find>Ga</find>
@@ -133,6 +127,7 @@
       <find>countdownScree</find>
       <find>Math.</find>
       <find>gameOver</find>
+      <find>gameOver = true</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,9 +142,9 @@
         <option value="$PROJECT_DIR$/js/background/index.js" />
         <option value="$PROJECT_DIR$/js/barrier/index.js" />
         <option value="$PROJECT_DIR$/js/road/index.js" />
-        <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/js/databus.js" />
         <option value="$PROJECT_DIR$/js/countdown/index.js" />
+        <option value="$PROJECT_DIR$/js/databus.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -247,7 +242,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536393865073</updated>
       <workItem from="1536393866447" duration="6737000" />
-      <workItem from="1536409081999" duration="10238000" />
+      <workItem from="1536409081999" duration="10280000" />
     </task>
     <task id="LOCAL-00001" summary="Update developer app id">
       <created>1536417632192</created>
@@ -256,11 +251,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536417632192</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implement a rudimentary countdown timer">
+      <created>1536426803957</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1536426803958</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16975000" />
+    <option name="totallyTimeSpent" value="17017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -295,7 +297,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update developer app id" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update developer app id" />
+    <MESSAGE value="Implement a rudimentary countdown timer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement a rudimentary countdown timer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -417,16 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="79" column="10" lean-forward="false" selection-start-line="79" selection-start-column="10" selection-end-line="79" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/gameover/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -445,6 +438,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/countdown/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/background/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -457,17 +458,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/databus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        <state relative-caret-position="290">
+          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/countdown/index.js">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="320">
+          <caret line="83" column="24" lean-forward="true" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

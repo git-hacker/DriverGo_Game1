@@ -29,7 +29,6 @@ export default class DataBus {
   }
 
   updateCountdownTimer(newTimeRemaining) {
-    console.log(newTimeRemaining);
     this.countdownToStart = newTimeRemaining;
 
     if(newTimeRemaining <= 0) {
