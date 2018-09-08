@@ -44,7 +44,9 @@ export default class Main {
     this.countdownScreen = new Countdown();
 
     this.bindLoop     = this.loop.bind(this)
-    this.hasEventBind = false
+    this.hasEventBind = false;
+
+    this.music.playCountdown();
   }
 
   touchEventHandler(e) {

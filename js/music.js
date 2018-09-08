@@ -14,10 +14,18 @@ export default class Music {
     this.bgmAudio.loop = true;
     this.bgmAudio.src  = 'audio/background_music.mp3'
 
+    this.countdownAudio      = new Audio()
+    this.countdownAudio.src  = 'audio/countdown.wav'
+
     this.playBgm();
   }
 
   playBgm() {
     this.bgmAudio.play()
+  }
+
+  playCountdown() {
+    this.countdownAudio.currentTime = 0
+    this.countdownAudio.play()
   }
 }
