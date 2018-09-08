@@ -69,10 +69,10 @@ export default class Main {
     ctx.font = "20px Arial"
 
     ctx.fillText(
-      "Cool beans buddy",
+      `Current Score: ${2 + 2}`,
       50,
       50
-    )
+    );
 
     this.player.drawToCanvas(ctx)
   }

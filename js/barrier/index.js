@@ -2,8 +2,8 @@ import DataBus from '../databus'
 import Sprite from '../base/sprite'
 
 const BARRIER_IMG_SRC = 'images/barrier.png';
-const BARRIER_WIDTH   = 60;
-const BARRIER_HEIGHT  = 60;
+const BARRIER_WIDTH   = 69;
+const BARRIER_HEIGHT  = 28;
 
 const __ = {
   speed: Symbol('speed')
@@ -23,13 +23,13 @@ export default class Barrier extends Sprite {
   init(roadId) {
     switch(roadId) {
       case 1:
-        this.x = 75;
+        this.x = 65;
         break;
       case 2:
-        this.x = 175;
+        this.x = 165;
         break;
       case 3:
-        this.x = 275;
+        this.x = 265;
         break;
     }
 
