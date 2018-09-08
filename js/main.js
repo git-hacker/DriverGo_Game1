@@ -2,9 +2,14 @@ import DataBus from './databus'
 import Player from './player/index'
 import BackGround from './background/index'
 import Road from './road/index'
+import Barrier from './barrier/index'
 
 let ctx = canvas.getContext('2d')
 let databus = new DataBus()
+
+function rnd(start, end){
+  return Math.floor(Math.random() * (end - start) + start)
+}
 
 export default class Main {
   constructor() {
@@ -55,6 +60,11 @@ export default class Main {
     this.road2.render(ctx);
     this.road3.render(ctx);
 
+    databus.barriers
+      .forEach((item) => {
+        item.drawToCanvas(ctx)
+      })
+
     ctx.fillStyle = "#ffffff"
     ctx.font = "20px Arial"
 
@@ -75,6 +85,13 @@ export default class Main {
     this.road2.update()
     this.road3.update()
     this.player.setCurrentRoad(databus.currentPlayerRoad);
+
+    this.barrierGenerate();
+
+    databus.barriers
+      .forEach((item) => {
+        item.update()
+      })
   }
 
   // 实现游戏帧循环
@@ -88,5 +105,13 @@ export default class Main {
       this.bindLoop,
       canvas
     )
+  }
+
+  barrierGenerate() {
+    if (databus.frame % 50 === 0) {
+      let barrier = databus.pool.getItemByClass('barrier', Barrier);
+      barrier.init(rnd(1, 4));
+      databus.barriers.push(barrier);
+    }
   }
 }

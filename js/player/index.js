@@ -25,15 +25,6 @@ export default class Player extends Sprite {
     this.currentRoad = 2;
   }
 
-  checkIsFingerOnAir(x, y) {
-    const deviation = 30
-
-    return !!(x >= this.x - deviation
-      && y >= this.y - deviation
-      && x <= this.x + this.width + deviation
-      && y <= this.y + this.height + deviation)
-  }
-
   setCurrentRoad(road) {
     this.currentRoad = road;
 

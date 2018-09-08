@@ -12,15 +12,22 @@ export default class DataBus {
 
     instance = this
 
-    this.pool = new Pool()
+    this.pool = new Pool();
     this.currentPlayerRoad = 2;
+    this.barriers = [];
 
     this.reset()
   }
 
   reset() {
-    this.frame = 0
-    this.score = 0
+    this.frame = 0;
+    this.score = 0;
     this.currentPlayerRoad = 2;
+  }
+
+  removeBarrier(barrier) {
+    let temp = this.barriers.shift();
+    temp.visible = false;
+    this.pool.recover('barrier', barrier)
   }
 }

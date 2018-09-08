@@ -45,7 +45,6 @@ export default class Road extends Sprite {
         console.log("Touched a road");
 
         databus.currentPlayerRoad = this.id;
-        // this.setAirPosAcrossFingerPosZ(x, y);
       }
     }).bind(this));
   }
