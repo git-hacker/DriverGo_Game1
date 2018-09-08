@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc721ba9-89fe-4ac3-889d-59a64b47aca4" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/coin.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/js/databus.js" afterPath="$PROJECT_DIR$/js/databus.js" />
       <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/js/music.js" afterPath="$PROJECT_DIR$/js/music.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,6 +16,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/player/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/gameover/index.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -40,8 +51,20 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="70" column="53" lean-forward="false" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="coin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/coin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -84,8 +107,8 @@
       <file leaf-file-name="databus.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/databus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+            <state relative-caret-position="234">
+              <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -94,8 +117,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/barrier/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="43" column="3" lean-forward="false" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+            <state relative-caret-position="144">
+              <caret line="23" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -107,13 +130,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gameover</find>
-      <find>isCollide</find>
-      <find>.log</find>
       <find>this.aniId</find>
       <find>render</find>
       <find>atlas</find>
-      <find>data</find>
       <find>handle</find>
       <find>this.score</find>
       <find>databus</find>
@@ -137,6 +156,10 @@
       <find>cx</find>
       <find>reset</find>
       <find>countdown</find>
+      <find>barriers</find>
+      <find>datatbus</find>
+      <find>data</find>
+      <find>barrierGenerate</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,9 +174,10 @@
         <option value="$PROJECT_DIR$/js/background/index.js" />
         <option value="$PROJECT_DIR$/js/barrier/index.js" />
         <option value="$PROJECT_DIR$/js/road/index.js" />
-        <option value="$PROJECT_DIR$/js/databus.js" />
         <option value="$PROJECT_DIR$/js/countdown/index.js" />
         <option value="$PROJECT_DIR$/js/music.js" />
+        <option value="$PROJECT_DIR$/js/databus.js" />
+        <option value="$PROJECT_DIR$/js/coin.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
@@ -206,13 +230,25 @@
               <item name="DriverGo_Game1" type="b2602c69:ProjectViewProjectNode" />
               <item name="DriverGo_Game1" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="countdown" type="462c0819:PsiDirectoryNode" />
+              <item name="barrier" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DriverGo_Game1" type="b2602c69:ProjectViewProjectNode" />
               <item name="DriverGo_Game1" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="gameover" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DriverGo_Game1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DriverGo_Game1" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DriverGo_Game1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DriverGo_Game1" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="road" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -252,7 +288,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536393865073</updated>
       <workItem from="1536393866447" duration="6737000" />
-      <workItem from="1536409081999" duration="11888000" />
+      <workItem from="1536409081999" duration="12889000" />
     </task>
     <task id="LOCAL-00001" summary="Update developer app id">
       <created>1536417632192</created>
@@ -296,11 +332,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536427804496</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add countdown SFX">
+      <created>1536429813019</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536429813019</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18625000" />
+    <option name="totallyTimeSpent" value="19626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -340,7 +383,8 @@
     <MESSAGE value="Improve timer display" />
     <MESSAGE value="Further improve countdown display" />
     <MESSAGE value="Add background music" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add background music" />
+    <MESSAGE value="Add countdown SFX" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add countdown SFX" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -428,14 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/player/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/base/animation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -449,16 +485,6 @@
         <state relative-caret-position="326">
           <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/barrier/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="43" column="3" lean-forward="false" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -477,14 +503,6 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/databus.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -514,10 +532,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/barrier/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="23" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/player/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/databus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/coin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="70" column="53" lean-forward="false" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>

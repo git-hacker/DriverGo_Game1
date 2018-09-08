@@ -6,6 +6,7 @@ import Barrier from './barrier/index'
 import GameOver from './gameover/index'
 import Countdown from './countdown/index'
 import Music from './music'
+import Coin from './coin'
 
 let ctx = canvas.getContext('2d');
 let databus = new DataBus();
@@ -66,6 +67,7 @@ export default class Main {
   }
 
   collisionDetection() {
+    // player with barrier
     for(let i = 0; i < databus.barriers.length; i++) {
       let barrier = databus.barriers[i];
 
@@ -74,6 +76,17 @@ export default class Main {
         databus.gameplayPaused = true;
 
         break;
+      }
+    }
+
+    // player with coins
+    for(let i = 0; i < databus.coins.length; i++) {
+      let coin = databus.coins[i];
+
+      if(this.player.isCollideWith(coin)) {
+        databus.score += 25;
+
+        databus.removeCoin(coin);
       }
     }
   }
@@ -87,6 +100,7 @@ export default class Main {
     this.road3.render(ctx);
 
     databus.barriers
+      .concat(databus.coins)
       .forEach((item) => {
         item.drawToCanvas(ctx)
       })
@@ -121,12 +135,17 @@ export default class Main {
       this.road1.update();
       this.road2.update();
       this.road3.update();
-      this.barrierGenerate();
+      this.barrierAndCoinGeneration();
 
       databus.barriers
         .forEach((item) => {
           item.update();
         });
+
+      databus.coins
+        .forEach((item) => {
+        item.update();
+    });
 
 
       this.updateScore();
@@ -155,11 +174,27 @@ export default class Main {
     );
   }
 
-  barrierGenerate() {
-    if (databus.frame % 50 === 0) {
-      let barrier = databus.pool.getItemByClass('barrier', Barrier);
-      barrier.init(rnd(1, 4));
-      databus.barriers.push(barrier);
+  barrierAndCoinGeneration() {
+    if (databus.frame % 25 === 0) {
+      const result =  rnd(0, 100) % 3;
+      if(result === 0 || result === 1) {
+        this.barrierGenerate();
+      }
+      else {
+        this.coinGenerate();
+      }
     }
+  }
+
+  barrierGenerate() {
+    let barrier = databus.pool.getItemByClass('barrier', Barrier);
+    barrier.init(rnd(1, 4));
+    databus.barriers.push(barrier);
+  }
+
+  coinGenerate() {
+    let coin = databus.pool.getItemByClass('coin', Coin);
+    coin.init(rnd(1, 4));
+    databus.coins.push(coin);
   }
 }

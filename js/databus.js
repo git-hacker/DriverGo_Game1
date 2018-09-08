@@ -1,10 +1,7 @@
 import Pool from './base/pool'
 
-let instance
+let instance;
 
-/**
- * 全局状态管理器
- */
 export default class DataBus {
   constructor() {
     if (instance) {
@@ -20,6 +17,7 @@ export default class DataBus {
     this.currentPlayerRoad = 2;
     this.gameOver = false;
     this.barriers = [];
+    this.coins = [];
     this.pool = new Pool();
 
     this.gameplayPaused = true;
@@ -43,5 +41,11 @@ export default class DataBus {
     let temp = this.barriers.shift();
     temp.visible = false;
     this.pool.recover('barrier', barrier)
+  }
+
+  removeCoin(coin) {
+    let temp = this.coins.shift();
+    temp.visible = false;
+    this.pool.recover('coin', coin);
   }
 }
