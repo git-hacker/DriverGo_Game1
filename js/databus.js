@@ -15,6 +15,7 @@ export default class DataBus {
     this.pool = new Pool();
     this.currentPlayerRoad = 2;
     this.barriers = [];
+    this.gameOver = false;
 
     this.reset()
   }
@@ -23,6 +24,7 @@ export default class DataBus {
     this.frame = 0;
     this.score = 0;
     this.currentPlayerRoad = 2;
+    this.gameOver = false;
   }
 
   removeBarrier(barrier) {

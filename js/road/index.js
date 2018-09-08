@@ -1,31 +1,31 @@
 import Sprite from '../base/sprite'
 import DataBus from '../databus'
 
-const screenWidth = window.innerWidth
-const screenHeight = window.innerHeight
+const screenWidth = window.innerWidth;
+const screenHeight = window.innerHeight;
 
-const ROAD_IMAGE_SRC = 'images/road.png'
-const ROAD_WIDTH = 204
-const ROAD_HEIGHT = 622
-const ROAD_DISPLAY_WIDTH = 100
-const ROAD_DISPLAY_HEIGHT = ROAD_HEIGHT * 2.5
+const ROAD_IMAGE_SRC = 'images/road.png';
+const ROAD_WIDTH = 204;
+const ROAD_HEIGHT = 622;
+const ROAD_DISPLAY_WIDTH = 100;
+const ROAD_DISPLAY_HEIGHT = ROAD_HEIGHT * 2.5;
 let databus = new DataBus()
 
 export default class Road extends Sprite {
   constructor(ctx, roadX, roadId) {
-    super(ROAD_IMAGE_SRC, ROAD_WIDTH, ROAD_HEIGHT)
+    super(ROAD_IMAGE_SRC, ROAD_WIDTH, ROAD_HEIGHT);
 
-    this.top = 0
-    this.x = roadX
+    this.top = 0;
+    this.x = roadX;
     this.id = roadId;
 
-    this.render(ctx)
+    this.render(ctx);
 
     this.initEvent()
   }
 
   checkIfRoadIsTouched(x, y) {
-    const deviation = 0
+    const deviation = 0;
 
     return !!(x >= this.x - deviation
       && y >= this.y - deviation
@@ -40,8 +40,10 @@ export default class Road extends Sprite {
       let x = e.touches[0].clientX;
       let y = e.touches[0].clientY;
 
-      if (this.checkIfRoadIsTouched(x, y)) {
-        databus.currentPlayerRoad = this.id;
+      if(!databus.gameOver) {
+        if (this.checkIfRoadIsTouched(x, y)) {
+          databus.currentPlayerRoad = this.id;
+        }
       }
     }).bind(this));
   }

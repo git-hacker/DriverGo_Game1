@@ -3,9 +3,10 @@ import Player from './player/index'
 import BackGround from './background/index'
 import Road from './road/index'
 import Barrier from './barrier/index'
+import GameOver from './gameover/index'
 
-let ctx = canvas.getContext('2d')
-let databus = new DataBus()
+let ctx = canvas.getContext('2d');
+let databus = new DataBus();
 
 function rnd(start, end){
   return Math.floor(Math.random() * (end - start) + start)
@@ -15,11 +16,13 @@ export default class Main {
   constructor() {
     this.restart();
 
-    this.bg = new BackGround(ctx)
+    this.bg = new BackGround(ctx);
     this.player = new Player(ctx, databus.currentPlayerRoad);
     this.road1 = new Road(ctx, 50, 1);
     this.road2 = new Road(ctx, 150, 2);
     this.road3 = new Road(ctx, 250, 3);
+
+    this.gameOverScreen = new GameOver();
 
     this.aniId = window.requestAnimationFrame(
       this.bindLoop,
@@ -34,27 +37,31 @@ export default class Main {
   }
 
   collisionDetection() {
-  }
+    for(let i = 0; i < databus.barriers.length; i++) {
+      let barrier = databus.barriers[i];
 
-  touchEventHandler(e) {
-    e.preventDefault()
+      if(this.player.isCollideWith(barrier)) {
+        databus.gameOver = true;
+        console.log("OHSHIT")
 
-    let x = e.touches[0].clientX
-    let y = e.touches[0].clientY
-
-    let area = this.gameinfo.btnArea
-
-    if (x >= area.startX
-      && x <= area.endX
-      && y >= area.startY
-      && y <= area.endY)
-      this.restart()
+        break;
+      }
+    }
   }
 
   render() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
+    this.bg.render(ctx);
 
-    this.bg.render(ctx)
+    switch(this.state) {
+      case "countdown":
+        break;
+      case "gameplay":
+        break;
+      case "gameover":
+        break;
+    }
+
 
     this.road1.render(ctx);
     this.road2.render(ctx);
@@ -75,36 +82,39 @@ export default class Main {
     );
 
     this.player.drawToCanvas(ctx)
+
+    if(databus.gameOver) {
+      this.gameOverScreen.renderGameOver(ctx, databus.score);
+    }
   }
 
   // 游戏逻辑更新主函数
   update() {
-    this.collisionDetection()
-    this.bg.update()
-    this.road1.update()
-    this.road2.update()
-    this.road3.update()
+    this.collisionDetection();
+    this.bg.update();
+    this.road1.update();
+    this.road2.update();
+    this.road3.update();
     this.player.setCurrentRoad(databus.currentPlayerRoad);
 
     this.barrierGenerate();
 
     databus.barriers
       .forEach((item) => {
-        item.update()
-      })
+        item.update();
+      });
   }
 
-  // 实现游戏帧循环
   loop() {
-    databus.frame++
+    databus.frame++;
 
-    this.update()
-    this.render()
+    this.update();
+    this.render();
 
     this.aniId = window.requestAnimationFrame(
       this.bindLoop,
       canvas
-    )
+    );
   }
 
   barrierGenerate() {
