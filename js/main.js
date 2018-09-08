@@ -13,8 +13,8 @@ export default class Main {
     this.bg = new BackGround(ctx)
     this.player = new Player(ctx)
     this.road1 = new Road(ctx, 30);
-    this.road2 = new Road(ctx, 130);
-    this.road3 = new Road(ctx, 230);
+    this.road2 = new Road(ctx, 150);
+    this.road3 = new Road(ctx, 280);
 
     this.aniId = window.requestAnimationFrame(
       this.bindLoop,

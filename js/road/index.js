@@ -3,8 +3,10 @@ const screenWidth = window.innerWidth
 const screenHeight = window.innerHeight
 
 const ROAD_IMAGE_SRC = 'images/road.png'
-const ROAD_WIDTH = 600   // nonsense
-const ROAD_HEIGHT = 500  // nonsense
+const ROAD_WIDTH = 150   
+const ROAD_HEIGHT = 633
+const ROAD_DISPLAY_WIDTH = 100
+const ROAD_DISPLAY_HEIGHT = ROAD_HEIGHT * 3
 
 export default class Road extends Sprite {
  
@@ -27,14 +29,10 @@ export default class Road extends Sprite {
   render(ctx) {
     ctx.drawImage(
       this.img,
-      0,
-      0,
-      this.width,
-      this.height,
       this.x,
       this.top - screenHeight,
-      screenWidth,
-      screenHeight * 2
-    );
+      ROAD_DISPLAY_WIDTH,
+      ROAD_DISPLAY_HEIGHT
+    )
   }
 }
