@@ -5,6 +5,7 @@ import Road from './road/index'
 import Barrier from './barrier/index'
 import GameOver from './gameover/index'
 import Countdown from './countdown/index'
+import Music from './music'
 
 let ctx = canvas.getContext('2d');
 let databus = new DataBus();
@@ -30,6 +31,8 @@ export default class Main {
       'touchstart',
       this.touchHandler
     );
+
+    this.music = new Music();
 
     this.bg = new BackGround(ctx);
     this.player = new Player(ctx, databus.currentPlayerRoad);
