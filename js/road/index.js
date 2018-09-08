@@ -1,4 +1,6 @@
 import Sprite from '../base/sprite'
+import DataBus from '../databus'
+
 const screenWidth = window.innerWidth
 const screenHeight = window.innerHeight
 
@@ -7,13 +9,15 @@ const ROAD_WIDTH = 150
 const ROAD_HEIGHT = 633
 const ROAD_DISPLAY_WIDTH = 100
 const ROAD_DISPLAY_HEIGHT = ROAD_HEIGHT * 3
+let databus = new DataBus()
 
 export default class Road extends Sprite {
-  constructor(ctx, roadX) {
+  constructor(ctx, roadX, roadId) {
     super(ROAD_IMAGE_SRC, ROAD_WIDTH, ROAD_HEIGHT)
 
     this.top = 0
     this.x = roadX
+    this.id = roadId;
 
     this.render(ctx)
 
@@ -40,6 +44,7 @@ export default class Road extends Sprite {
         this.touched = true;
         console.log("Touched a road");
 
+        databus.currentPlayerRoad = this.id;
         // this.setAirPosAcrossFingerPosZ(x, y);
       }
     }).bind(this));

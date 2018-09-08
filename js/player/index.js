@@ -22,8 +22,7 @@ export default class Player extends Sprite {
     // 用于在手指移动的时候标识手指是否已经在飞机上了
     this.touched = false
 
-    // 初始化事件监听
-    this.initEvent()
+    this.currentRoad = 2;
   }
 
   checkIsFingerOnAir(x, y) {
@@ -35,61 +34,19 @@ export default class Player extends Sprite {
       && y <= this.y + this.height + deviation)
   }
 
-  setAirPosAcrossFingerPosZ(x, y) {
-    let disX = x - this.width / 2
-    let disY = y - this.height / 2
+  setCurrentRoad(road) {
+    this.currentRoad = road;
 
-    if (disX < 0)
-      disX = 0
-
-    else if (disX > screenWidth - this.width)
-      disX = screenWidth - this.width
-
-    if (disY <= 0)
-      disY = 0
-
-    else if (disY > screenHeight - this.height)
-      disY = screenHeight - this.height
-
-    this.x = disX
-    this.y = disY
-  }
-
-  /**
-   * 玩家响应手指的触摸事件
-   * 改变战机的位置
-   */
-  initEvent() {
-    canvas.addEventListener('touchstart', ((e) => {
-      e.preventDefault()
-
-      let x = e.touches[0].clientX
-      let y = e.touches[0].clientY
-
-      //
-      if (this.checkIsFingerOnAir(x, y)) {
-        this.touched = true
-
-        this.setAirPosAcrossFingerPosZ(x, y)
-      }
-
-    }).bind(this))
-
-    canvas.addEventListener('touchmove', ((e) => {
-      e.preventDefault()
-
-      let x = e.touches[0].clientX
-      let y = e.touches[0].clientY
-
-      if (this.touched)
-        this.setAirPosAcrossFingerPosZ(x, y)
-
-    }).bind(this))
-
-    canvas.addEventListener('touchend', ((e) => {
-      e.preventDefault()
-
-      this.touched = false
-    }).bind(this))
+    switch(this.currentRoad) {
+      case 1:
+        this.x = 75;
+        break;
+      case 2:
+        this.x = 175;
+        break;
+      case 3:
+        this.x = 275;
+        break;
+    }
   }
 }

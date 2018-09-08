@@ -11,10 +11,10 @@ export default class Main {
     this.restart();
 
     this.bg = new BackGround(ctx)
-    this.player = new Player(ctx)
-    this.road1 = new Road(ctx, 30);
-    this.road2 = new Road(ctx, 150);
-    this.road3 = new Road(ctx, 280);
+    this.player = new Player(ctx, databus.currentPlayerRoad);
+    this.road1 = new Road(ctx, 50, 1);
+    this.road2 = new Road(ctx, 150, 2);
+    this.road3 = new Road(ctx, 250, 3);
 
     this.aniId = window.requestAnimationFrame(
       this.bindLoop,
@@ -74,6 +74,7 @@ export default class Main {
     this.road1.update()
     this.road2.update()
     this.road3.update()
+    this.player.setCurrentRoad(databus.currentPlayerRoad);
   }
 
   // 实现游戏帧循环

@@ -13,6 +13,7 @@ export default class DataBus {
     instance = this
 
     this.pool = new Pool()
+    this.currentPlayerRoad = 2;
 
     this.reset()
   }
@@ -20,5 +21,6 @@ export default class DataBus {
   reset() {
     this.frame = 0
     this.score = 0
+    this.currentPlayerRoad = 2;
   }
 }
