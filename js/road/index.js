@@ -24,7 +24,7 @@ export default class Road extends Sprite {
     this.initEvent()
   }
 
-  checkIsFingerOnAir(x, y) {
+  checkIfRoadIsTouched(x, y) {
     const deviation = 0
 
     return !!(x >= this.x - deviation
@@ -35,15 +35,12 @@ export default class Road extends Sprite {
 
   initEvent() {
     canvas.addEventListener('touchstart', ((e) => {
-      e.preventDefault()
+      e.preventDefault();
 
       let x = e.touches[0].clientX;
       let y = e.touches[0].clientY;
 
-      if (this.checkIsFingerOnAir(x, y)) {
-        this.touched = true;
-        console.log("Touched a road");
-
+      if (this.checkIfRoadIsTouched(x, y)) {
         databus.currentPlayerRoad = this.id;
       }
     }).bind(this));
