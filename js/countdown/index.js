@@ -13,7 +13,7 @@ export default class Countdown {
     ctx.font      = "72px Arial";
     ctx.fillText(
       `${countdownInSeconds}`,
-      screenWidth / 2 - 10,
+      screenWidth / 2 - 20,
       screenHeight / 2
     );
   }
