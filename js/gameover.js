@@ -2,7 +2,7 @@ const screenWidth  = window.innerWidth
 const screenHeight = window.innerHeight
 
 let gameoverBackground = new Image()
-gameoverBackground.src = 'images/modal_bg.png'
+gameoverBackground.src = 'images/modal_bg.jpeg'
 
 const GAMEOVER_BG_WIDTH =  350;
 const GAMEOVER_BG_HEIGHT = 271;
@@ -21,22 +21,18 @@ export default class GameOver {
     ctx.font      = "20px Arial"
 
     ctx.fillText(
-      'Game Over!',
-      screenWidth / 2 - 40,
-      screenHeight / 2 - 100 + 50
-    )
-
-    ctx.fillText(
       'Score: ' + score,
       screenWidth / 2 - 40,
-      screenHeight / 2 - 100 + 130
+      screenHeight / 2 - 100 + 115
     )
 
+    ctx.fillStyle = "#ffffff"
+    ctx.font      = "20px Arial"
 
     ctx.fillText(
       'Try Again',
       screenWidth / 2 - 40,
-      screenHeight / 2 - 100 + 205
+      screenHeight / 2 - 100 + 195
     )
 
     this.tryAgainButtonArea = {

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc721ba9-89fe-4ac3-889d-59a64b47aca4" name="Default" comment="">
+    <list default="true" id="cc721ba9-89fe-4ac3-889d-59a64b47aca4" name="Default" comment="Adjust road positioning for some overlap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/images/modal_bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/gameover.js" afterPath="$PROJECT_DIR$/js/gameover.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -86,8 +87,8 @@
       <file leaf-file-name="gameover.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/gameover.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="324">
+              <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -129,7 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>restart</find>
       <find>requ</find>
       <find>2</find>
       <find>speed</find>
@@ -159,6 +159,7 @@
       <find>score</find>
       <find>score:</find>
       <find>drawImager</find>
+      <find>modal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,6 +183,7 @@
         <option value="$PROJECT_DIR$/js/coin.js" />
         <option value="$PROJECT_DIR$/js/road.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/gameover.js" />
       </list>
     </option>
   </component>
@@ -271,7 +273,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536393865073</updated>
       <workItem from="1536393866447" duration="6737000" />
-      <workItem from="1536409081999" duration="22593000" />
+      <workItem from="1536409081999" duration="23059000" />
     </task>
     <task id="LOCAL-00001" summary="Update developer app id">
       <created>1536417632192</created>
@@ -350,11 +352,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536488303463</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Adjust road positioning for some overlap">
+      <created>1536488562266</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1536488562266</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29330000" />
+    <option name="totallyTimeSpent" value="29796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -398,7 +407,8 @@
     <MESSAGE value="Add ability to spawn &amp; collect coins for points" />
     <MESSAGE value="Add background for score" />
     <MESSAGE value="Replace road image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replace road image" />
+    <MESSAGE value="Adjust road positioning for some overlap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjust road positioning for some overlap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -639,8 +649,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/gameover.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="324">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
       </provider>
