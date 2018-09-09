@@ -2,8 +2,8 @@ import DataBus from './databus'
 import Sprite from './base/sprite'
 
 const COIN_IMG_SRC = 'images/coin.png';
-const COIN_WIDTH   = 75;
-const COIN_HEIGHT  = 62;
+const COIN_WIDTH   = 300 / 4;
+const COIN_HEIGHT  = 248 / 4;
 
 const __ = {
   speed: Symbol('speed')
@@ -23,13 +23,13 @@ export default class Coin extends Sprite {
   init(roadId) {
     switch(roadId) {
       case 1:
-        this.x = 65;
+        this.x = 60;
         break;
       case 2:
-        this.x = 165;
+        this.x = 160;
         break;
       case 3:
-        this.x = 265;
+        this.x = 260;
         break;
     }
 
