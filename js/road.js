@@ -4,11 +4,11 @@ import DataBus from './databus'
 const screenWidth = window.innerWidth;
 const screenHeight = window.innerHeight;
 
-const ROAD_IMAGE_SRC = 'images/road.png';
-const ROAD_WIDTH = 204;
-const ROAD_HEIGHT = 622;
+const ROAD_IMAGE_SRC = 'images/road.jpeg';
+const ROAD_WIDTH = 200;
+const ROAD_HEIGHT = 1598;
 const ROAD_DISPLAY_WIDTH = 100;
-const ROAD_DISPLAY_HEIGHT = ROAD_HEIGHT * 2.5;
+const ROAD_DISPLAY_HEIGHT = ROAD_HEIGHT;
 let databus = new DataBus()
 
 export default class Road extends Sprite {
