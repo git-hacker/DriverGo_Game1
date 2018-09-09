@@ -41,7 +41,7 @@ export default class Sprite {
     let spY = sp.y + sp.height / 2
 
     if (!this.visible || !sp.visible)
-      return false
+      return false;
 
     return !!(spX >= this.x
       && spX <= this.x + this.width

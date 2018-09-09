@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc721ba9-89fe-4ac3-889d-59a64b47aca4" name="Default" comment="">
+    <list default="true" id="cc721ba9-89fe-4ac3-889d-59a64b47aca4" name="Default" comment="Adjust item positioning with new roadways">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/images/road.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/barrier.js" afterPath="$PROJECT_DIR$/js/barrier.js" />
-      <change beforePath="$PROJECT_DIR$/js/coin.js" afterPath="$PROJECT_DIR$/js/coin.js" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/js/player.js" afterPath="$PROJECT_DIR$/js/player.js" />
-      <change beforePath="$PROJECT_DIR$/js/road.js" afterPath="$PROJECT_DIR$/js/road.js" />
+      <change beforePath="$PROJECT_DIR$/js/base/sprite.js" afterPath="$PROJECT_DIR$/js/base/sprite.js" />
+      <change beforePath="$PROJECT_DIR$/js/gameover.js" afterPath="$PROJECT_DIR$/js/gameover.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameover.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gameover.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/gameover.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="184">
+              <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -110,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -186,13 +181,13 @@
         <option value="$PROJECT_DIR$/js/music.js" />
         <option value="$PROJECT_DIR$/js/gameover/index.js" />
         <option value="$PROJECT_DIR$/js/score.js" />
-        <option value="$PROJECT_DIR$/js/gameover.js" />
         <option value="$PROJECT_DIR$/js/road.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/barrier.js" />
         <option value="$PROJECT_DIR$/js/player.js" />
         <option value="$PROJECT_DIR$/js/coin.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/js/gameover.js" />
       </list>
     </option>
   </component>
@@ -283,7 +278,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536393865073</updated>
       <workItem from="1536393866447" duration="6737000" />
-      <workItem from="1536409081999" duration="23704000" />
+      <workItem from="1536409081999" duration="24471000" />
     </task>
     <task id="LOCAL-00001" summary="Update developer app id">
       <created>1536417632192</created>
@@ -376,11 +371,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536489039344</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Adjust item positioning with new roadways">
+      <created>1536489706356</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1536489706356</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30441000" />
+    <option name="totallyTimeSpent" value="31208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="427" y="23" width="853" height="777" extended-state="0" />
@@ -426,7 +428,8 @@
     <MESSAGE value="Replace road image" />
     <MESSAGE value="Adjust road positioning for some overlap" />
     <MESSAGE value="Rework game over screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rework game over screen" />
+    <MESSAGE value="Adjust item positioning with new roadways" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjust item positioning with new roadways" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -602,14 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameover.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/road.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -668,6 +663,14 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gameover.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

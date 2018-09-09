@@ -24,7 +24,16 @@ export default class GameOver {
       'Score: ' + score,
       screenWidth / 2 - 40,
       screenHeight / 2 - 100 + 115
-    )
+    );
+
+    const pointsEarned = score * 2;
+
+    ctx.font      = "14px Arial"
+    ctx.fillText(
+      `You've earned ${pointsEarned} points!`,
+      screenWidth / 2 - 75,
+      screenHeight / 2 - 100 + 140
+    );
 
     ctx.fillStyle = "#ffffff"
     ctx.font      = "20px Arial"
@@ -33,7 +42,7 @@ export default class GameOver {
       'Try Again',
       screenWidth / 2 - 40,
       screenHeight / 2 - 100 + 195
-    )
+    );
 
     this.tryAgainButtonArea = {
       startX: screenWidth / 2 - 40,
