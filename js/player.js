@@ -26,13 +26,13 @@ export default class Player extends Sprite {
 
     switch(this.currentRoad) {
       case 1:
-        this.x = 82;
+        this.x = 105;
         break;
       case 2:
-        this.x = 182;
+        this.x = 192;
         break;
       case 3:
-        this.x = 282;
+        this.x = 280;
         break;
     }
   }

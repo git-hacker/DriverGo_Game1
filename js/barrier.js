@@ -23,13 +23,13 @@ export default class Barrier extends Sprite {
   init(roadId) {
     switch(roadId) {
       case 1:
-        this.x = 65;
+        this.x = 84;
         break;
       case 2:
-        this.x = 165;
+        this.x = 170;
         break;
       case 3:
-        this.x = 265;
+        this.x = 262;
         break;
     }
 

@@ -4,7 +4,7 @@ import DataBus from './databus'
 const screenWidth = window.innerWidth;
 const screenHeight = window.innerHeight;
 
-const ROAD_IMAGE_SRC = 'images/road.jpeg';
+const ROAD_IMAGE_SRC = 'images/road.png';
 const ROAD_WIDTH = 200;
 const ROAD_HEIGHT = 1598;
 const ROAD_DISPLAY_WIDTH = 100;

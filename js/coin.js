@@ -23,10 +23,10 @@ export default class Coin extends Sprite {
   init(roadId) {
     switch(roadId) {
       case 1:
-        this.x = 60;
+        this.x = 80;
         break;
       case 2:
-        this.x = 160;
+        this.x = 170;
         break;
       case 3:
         this.x = 260;
