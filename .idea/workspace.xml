@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc721ba9-89fe-4ac3-889d-59a64b47aca4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion10.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion11.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion12.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion13.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion14.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion15.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion16.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion17.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion18.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion19.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion7.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion8.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/explosion9.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/explosion.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/js/barrier/index.js" afterPath="$PROJECT_DIR$/js/barrier/index.js" />
-      <change beforePath="$PROJECT_DIR$/js/base/animation.js" afterPath="$PROJECT_DIR$/js/base/animation.js" />
-      <change beforePath="$PROJECT_DIR$/js/databus.js" afterPath="$PROJECT_DIR$/js/databus.js" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/js/music.js" afterPath="$PROJECT_DIR$/js/music.js" />
-      <change beforePath="$PROJECT_DIR$/js/player/index.js" afterPath="$PROJECT_DIR$/js/player/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,8 +58,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="78" column="19" lean-forward="false" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+            <state relative-caret-position="194">
+              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -93,11 +67,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="music.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/gameover/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="score.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/score.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="music.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/music.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="612">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,9 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>databus.</find>
-      <find>drawImage</find>
-      <find>touchHandler</find>
       <find>restart</find>
       <find>requ</find>
       <find>2</find>
@@ -137,6 +128,9 @@
       <find>collision</find>
       <find>databus</find>
       <find>width</find>
+      <find>score</find>
+      <find>score:</find>
+      <find>drawImager</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,18 +140,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/js/gameover/index.js" />
         <option value="$PROJECT_DIR$/js/background/index.js" />
         <option value="$PROJECT_DIR$/js/road/index.js" />
         <option value="$PROJECT_DIR$/js/countdown/index.js" />
         <option value="$PROJECT_DIR$/js/coin.js" />
         <option value="$PROJECT_DIR$/js/barrier/index.js" />
         <option value="$PROJECT_DIR$/js/databus.js" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/explosion.js" />
         <option value="$PROJECT_DIR$/js/base/animation.js" />
         <option value="$PROJECT_DIR$/js/player/index.js" />
         <option value="$PROJECT_DIR$/js/music.js" />
+        <option value="$PROJECT_DIR$/js/gameover/index.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/score.js" />
       </list>
     </option>
   </component>
@@ -203,7 +198,18 @@
             <path>
               <item name="DriverGo_Game1" type="b2602c69:ProjectViewProjectNode" />
               <item name="DriverGo_Game1" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DriverGo_Game1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DriverGo_Game1" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DriverGo_Game1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DriverGo_Game1" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="gameover" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DriverGo_Game1" type="b2602c69:ProjectViewProjectNode" />
@@ -257,7 +263,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536393865073</updated>
       <workItem from="1536393866447" duration="6737000" />
-      <workItem from="1536409081999" duration="16472000" />
+      <workItem from="1536409081999" duration="19147000" />
     </task>
     <task id="LOCAL-00001" summary="Update developer app id">
       <created>1536417632192</created>
@@ -315,11 +321,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536430860122</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add background for score">
+      <created>1536479686044</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1536479686044</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23209000" />
+    <option name="totallyTimeSpent" value="25884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1280" height="777" extended-state="6" />
@@ -361,7 +374,8 @@
     <MESSAGE value="Add background music" />
     <MESSAGE value="Add countdown SFX" />
     <MESSAGE value="Add ability to spawn &amp; collect coins for points" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ability to spawn &amp; collect coins for points" />
+    <MESSAGE value="Add background for score" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add background for score" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -456,14 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameover/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -571,16 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="78" column="19" lean-forward="false" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -591,8 +587,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/music.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="612">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/black_circle.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gameover/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/score.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding />
         </state>
       </provider>

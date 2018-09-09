@@ -7,6 +7,7 @@ import GameOver from './gameover/index'
 import Countdown from './countdown/index'
 import Music from './music'
 import Coin from './coin'
+import Score from './score'
 
 let ctx = canvas.getContext('2d');
 let databus = new DataBus();
@@ -43,11 +44,13 @@ export default class Main {
 
     this.gameOverScreen = new GameOver();
     this.countdownScreen = new Countdown();
+    this.scoreDisplay = new Score();
 
     this.bindLoop     = this.loop.bind(this)
     this.hasEventBind = false;
 
     this.music.playCountdown();
+
   }
 
   touchEventHandler(e) {
@@ -116,10 +119,7 @@ export default class Main {
       }
     });
 
-    ctx.fillStyle = "#ffffff"
-    ctx.font = "20px Arial"
-
-    ctx.fillText(`Current Score: ${databus.score}`, 50, 50);
+    this.scoreDisplay.renderGameScore(ctx);
 
     this.player.drawToCanvas(ctx)
 

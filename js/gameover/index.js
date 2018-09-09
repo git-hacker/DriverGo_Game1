@@ -8,17 +8,6 @@ const GAMEOVER_BG_WIDTH =  350;
 const GAMEOVER_BG_HEIGHT = 271;
 
 export default class GameOver {
-  renderGameScore(ctx, score) {
-    ctx.fillStyle = "#ffffff";
-    ctx.font      = "20px Arial";
-
-    ctx.fillText(
-      score,
-      10,
-      30
-    )
-  }
-
   renderGameOver(ctx, score) {
     ctx.drawImage(
       gameoverBackground,

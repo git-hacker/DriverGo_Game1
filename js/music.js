@@ -1,8 +1,5 @@
 let instance;
 
-/**
- * 统一的音效管理器
- */
 export default class Music {
   constructor() {
     if ( instance )
