@@ -38,9 +38,9 @@ export default class Main {
 
     this.bg = new BackGround(ctx);
     this.player = new Player(ctx, databus.currentPlayerRoad);
-    this.road1 = new Road(ctx, 50, 1);
-    this.road2 = new Road(ctx, 150, 2);
-    this.road3 = new Road(ctx, 250, 3);
+    this.road1 = new Road(ctx, 60, 1);
+    this.road2 = new Road(ctx, 148, 2);
+    this.road3 = new Road(ctx, 236, 3);
 
     this.gameOverScreen = new GameOver();
     this.countdownScreen = new Countdown();
