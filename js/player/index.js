@@ -1,5 +1,7 @@
 import Sprite from '../base/sprite'
 import DataBus from '../databus'
+import Animation from '../base/animation'
+import Explosion from '../explosion'
 
 const screenWidth = window.innerWidth
 const screenHeight = window.innerHeight
@@ -15,6 +17,8 @@ export default class Player extends Sprite {
     this.y = screenHeight - this.height - 30
 
     this.currentRoad = 2;
+
+    this.explosion = new Explosion();
   }
 
   setCurrentRoad(road) {
@@ -31,5 +35,12 @@ export default class Player extends Sprite {
         this.x = 282;
         break;
     }
+  }
+
+  playExplosionAnimation() {
+    this.explosion.x = this.x - (PLAYER_WIDTH * 2.5);
+    this.explosion.y = this.y;
+    this.explosion.playAnimation();
+    this.visible = false;
   }
 }

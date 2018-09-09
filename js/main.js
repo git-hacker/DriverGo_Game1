@@ -75,6 +75,9 @@ export default class Main {
         databus.gameOver = true;
         databus.gameplayPaused = true;
 
+        this.player.playExplosionAnimation();
+        this.music.playExplosion();
+
         break;
       }
     }
@@ -105,7 +108,13 @@ export default class Main {
       .concat(databus.coins)
       .forEach((item) => {
         item.drawToCanvas(ctx)
-      })
+      });
+
+    databus.animations.forEach((ani) => {
+      if(ani.isPlaying) {
+        ani.aniRender(ctx);
+      }
+    });
 
     ctx.fillStyle = "#ffffff"
     ctx.font = "20px Arial"

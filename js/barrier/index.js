@@ -12,12 +12,12 @@ const __ = {
 let databus = new DataBus()
 
 function rnd(start, end){
-  return Math.floor(Math.random() * (end - start) + start)
+  return Math.floor(Math.random() * (end - start) + start);
 }
 
 export default class Barrier extends Sprite {
   constructor() {
-    super(BARRIER_IMG_SRC, BARRIER_WIDTH, BARRIER_HEIGHT)
+    super(BARRIER_IMG_SRC, BARRIER_WIDTH, BARRIER_HEIGHT);
   }
 
   init(roadId) {
@@ -47,7 +47,8 @@ export default class Barrier extends Sprite {
 
     this.y += this[__.speed];
 
-    if(this.y > window.innerHeight + this.height)
-      databus.removeBarrier(this)
+    if(this.y > window.innerHeight + this.height) {
+      databus.removeBarrier(this);
+    }
   }
 }

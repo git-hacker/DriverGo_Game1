@@ -10,15 +10,19 @@ export default class Music {
 
     instance = this;
 
-    this.bgmAudio      = new Audio()
+    this.bgmAudio      = new Audio();
     this.bgmAudio.loop = true;
-    this.bgmAudio.src  = 'audio/background_music.mp3'
+    this.bgmAudio.src  = 'audio/background_music.mp3';
 
-    this.countdownAudio      = new Audio()
-    this.countdownAudio.src  = 'audio/countdown.mp3'
+    this.countdownAudio      = new Audio();
+    this.countdownAudio.src  = 'audio/countdown.mp3';
 
     this.coinAudio = new Audio();
     this.coinAudio.src = 'audio/coin.wav';
+
+    this.explosionAudio = new Audio();
+    this.explosionAudio.volume = 150;
+    this.explosionAudio.src = 'audio/explosion.mp3';
 
     this.playBgm();
   }
@@ -30,6 +34,11 @@ export default class Music {
   playCountdown() {
     this.countdownAudio.currentTime = 0;
     this.countdownAudio.play()
+  }
+
+  playExplosion() {
+    this.explosionAudio.currentTime = 0;
+    this.explosionAudio.play()
   }
 
   playCoin() {

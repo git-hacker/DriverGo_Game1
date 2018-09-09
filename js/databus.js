@@ -19,6 +19,7 @@ export default class DataBus {
     this.barriers = [];
     this.coins = [];
     this.pool = new Pool();
+    this.animations = [];
 
     this.gameplayPaused = true;
 
