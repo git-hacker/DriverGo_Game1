@@ -1,5 +1,5 @@
-import DataBus from '../databus'
-import Sprite from '../base/sprite'
+import DataBus from './databus'
+import Sprite from './base/sprite'
 
 const BARRIER_IMG_SRC = 'images/barrier.png';
 const BARRIER_WIDTH   = 69;

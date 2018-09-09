@@ -1,7 +1,7 @@
-import Sprite from '../base/sprite'
-import DataBus from '../databus'
-import Animation from '../base/animation'
-import Explosion from '../explosion'
+import Sprite from './base/sprite'
+import DataBus from './databus'
+import Animation from './base/animation'
+import Explosion from './explosion'
 
 const screenWidth = window.innerWidth
 const screenHeight = window.innerHeight

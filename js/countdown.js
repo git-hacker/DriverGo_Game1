@@ -1,4 +1,4 @@
-import DataBus from '../databus'
+import DataBus from './databus'
 
 const screenWidth  = window.innerWidth;
 const screenHeight = window.innerHeight;

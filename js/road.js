@@ -1,5 +1,5 @@
-import Sprite from '../base/sprite'
-import DataBus from '../databus'
+import Sprite from './base/sprite'
+import DataBus from './databus'
 
 const screenWidth = window.innerWidth;
 const screenHeight = window.innerHeight;
